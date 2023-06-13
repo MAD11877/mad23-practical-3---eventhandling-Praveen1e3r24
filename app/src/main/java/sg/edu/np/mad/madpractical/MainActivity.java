@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView10 = findViewById(R.id.textView10);
         TextView textView3=findViewById(R.id.textView3);
-        textView10.setText("hellodsuif");
+        textView10.setText("hello");
         textView3.setText(desc);
 
 
@@ -64,15 +64,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        if (ListActivity.x=true)
-        {
+
             Intent receivingEnd=getIntent();
             String total =(String) receivingEnd.getStringExtra("number");
+
 
            // final TextView mTextView=(TextView) findViewById(R.id.textView);
 
             textView10.setText(total);
-        }
+
 
         x.setOnClickListener(new View.OnClickListener() {
             @Override

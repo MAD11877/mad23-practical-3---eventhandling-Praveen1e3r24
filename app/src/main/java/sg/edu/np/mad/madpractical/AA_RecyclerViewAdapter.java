@@ -1,5 +1,6 @@
 package sg.edu.np.mad.madpractical;
 
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -30,10 +31,10 @@ public class AA_RecyclerViewAdapter extends RecyclerView.Adapter<AA_RecyclerView
 
     @NonNull
     @Override
-    public AA_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view =inflater.inflate(R.layout.recycler_view_row,parent,false);
-        return new AA_RecyclerViewAdapter.MyViewHolder(view, recyclerViewInterface);
+        return new MyViewHolder(view, recyclerViewInterface);
     }
 
     @Override
